@@ -50,7 +50,8 @@ public class Main {
                 player.nextSong();
             } else if (input.equalsIgnoreCase("previous")) {
                 player.previousSong();
-            } else if (input.equalsIgnoreCase("playlist"))  { //Jayleen Espinal
+            //Jayleen Espinal
+            } else if (input.equalsIgnoreCase("playlist"))  { 
                 System.out.println("Current playlist: ");
                 for (Song song : playlist.getSongs())   {
                     System.out.println(song.getTitle() + " by " + song.getArtist());
@@ -78,6 +79,7 @@ public class Main {
                     System.out.println("Sorry, the lyrics for " + title + " could not be found.");
                 }
             }
+            //Tajae Anderson
             else if (input.equalsIgnoreCase("exit")) {
                 // Exit the program
                 System.out.println("Goodbye!");
