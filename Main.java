@@ -1,3 +1,4 @@
+//Tajae Anderson
 import java.util.Scanner;
 import java.io.FileReader;
 import java.io.IOException;
@@ -49,7 +50,7 @@ public class Main {
                 player.nextSong();
             } else if (input.equalsIgnoreCase("previous")) {
                 player.previousSong();
-            } else if (input.equalsIgnoreCase("playlist"))  {
+            } else if (input.equalsIgnoreCase("playlist"))  { //Jayleen Espinal
                 System.out.println("Current playlist: ");
                 for (Song song : playlist.getSongs())   {
                     System.out.println(song.getTitle() + " by " + song.getArtist());

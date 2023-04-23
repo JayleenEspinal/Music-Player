@@ -1,3 +1,4 @@
+//Jayleen Espinal
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,6 +23,7 @@ public class Lyric {
         System.out.println(lyrics);
     }
 
+    //read the lyrics from the lyrics file
     private String readLyricsFromFile(String lyricFilePath)   {
         StringBuilder lyricsBuilder = new StringBuilder();
         try (BufferedReader br = new BufferedReader(new FileReader(lyricFilePath))) {

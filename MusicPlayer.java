@@ -1,3 +1,4 @@
+//Tajae Anderson
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,8 +22,7 @@ public class MusicPlayer {
         //loadLyrics();
     }
 
-    
-
+    //Jayleen Espinal
    public void loadLyrics() {
         try {
             Lyric firstDayOut = new Lyric("First Day Out", "lyrics/firstdayout.txt");
@@ -59,7 +59,8 @@ public class MusicPlayer {
             System.err.println("Error loading the lyrics: ");
         }
     }
-    
+
+    //Jayleen Espinal
     public String getLyrics(String title) {
         String lyricsFilePath = "lyrics/" + title.toLowerCase().replaceAll("\\s", "") + ".txt";
         for (Song song : songs) {
@@ -80,6 +81,7 @@ public class MusicPlayer {
         return null;
     }
 
+    //Jayleen Espinal
     public void printLyrics(String songTitle)   {
         Lyric songLyrics = lyrics.get(songTitle);
         if (songLyrics != null) {
@@ -91,16 +93,19 @@ public class MusicPlayer {
     }
 
 
+    //Jayleen Espinal
     public void addSong(Song song) {
         // Add a new song to the list
         songs.add(song);
     }
 
+    //Jayleen Espinal
     public void addToPlaylist(Song song)    {
         // Add a song to the playlist
         playlist.addSong(song);
     }
 
+    //Jayleen Espinal
     public void playPlaylist()  {
         // Play the songs in the playlist
         for (Song song : playlist.getSongs())   {
@@ -108,6 +113,7 @@ public class MusicPlayer {
         }
     }
 
+    //Tajae Anderson
     public void searchMusic(String searchTerm) {
         // Search for a song by title or artist
         ArrayList<Song> results = new ArrayList<Song>();
@@ -129,6 +135,7 @@ public class MusicPlayer {
         }
     }
 
+    //Tajae Anderson
     public void nextSong() {
         if (songs.isEmpty()) {
             System.out.println("No songs in the player.");
@@ -140,6 +147,7 @@ public class MusicPlayer {
         System.out.println("Now playing: " + currentSong.getTitle() + " by " + currentSong.getArtist());
     }
 
+    //Tajae Anderson
     public void listSongs() {
         if (songs.isEmpty()) {
             System.out.println("No songs in the player.");
@@ -152,6 +160,7 @@ public class MusicPlayer {
         }
     }
 
+    //Tajae Anderson
     public void previousSong() {
         if (songs.isEmpty()) {
             System.out.println("No songs in the player.");
@@ -163,6 +172,7 @@ public class MusicPlayer {
         System.out.println("Now playing: " + currentSong.getTitle() + " by " + currentSong.getArtist());
     }
 
+    //Tajae Anderson
     public void toggleRepeat() {
         repeat = !repeat;
         System.out.println("Repeat is now " + (repeat ? "on" : "off") + ".");
