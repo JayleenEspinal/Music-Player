@@ -1,0 +1,5 @@
+//Main and MusicPlayer class worked on by Tajae Anderson, and Jayleen Espinal
+//Song class worked on by Tajae Anderson
+//Song.txt provided by Tajae Anderson
+//Lyric and Playlist class worked on by Jayleen Espinal
+//lyrics folder provided by Jayleen Espinal
